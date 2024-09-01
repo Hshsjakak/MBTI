@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light background color */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Light gradient background */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Heading Styles */
+h1, h2 {
+    color: #007bff; /* Blue color for headings */
+    text-align: center;
+    margin: 0 0 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Fieldset Styles */
+fieldset {
+    border: 2px solid #007bff; /* Blue border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #f9f9f9; /* Light background for fieldset */
+    animation: fadeIn 1s ease-out;
+}
+
+legend {
+    font-weight: bold;
+    color: #007bff; /* Blue color for legend */
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background Images for Fieldsets */
+fieldset:nth-of-type(odd) {
+    background-image: url('mortgage-background1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+fieldset:nth-of-type(even) {
+    background-image: url('mortgage-background2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
